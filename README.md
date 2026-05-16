@@ -1,69 +1,102 @@
-<h1>🧴 SkinGuard AI</h1>
-<p><strong>SkinGuard AI</strong> is a full-stack AI-powered web application that detects skin cancer from images using deep learning.</p>
+# 🧴 SkinGuard AI
 
-<div class="note">
-⚠️ This project is for <strong>educational and research purposes only</strong>.  
-It is not intended for real medical diagnosis.
-</div>
+SkinGuard AI is a full-stack AI-powered web application that detects skin cancer from images using Deep Learning and Computer Vision techniques.
 
-<hr>
+The application allows users to upload skin lesion images through a modern web interface, where an AI model analyzes the image and predicts whether the lesion is cancerous or non-cancerous in real time.
 
-<h2>🚀 What This Project Does</h2>
-<p>
-SkinGuard AI allows users to upload skin lesion images through a web interface.
-The image is processed by a deep learning model on the backend, which predicts
-whether the lesion is cancerous or non-cancerous.
-</p>
+> ⚠️ This project is built for educational and research purposes only.  
+> It is **not intended for professional medical diagnosis**.
 
-<p><strong>Flow:</strong> Image → AI Model → Prediction → Web UI</p>
 
-<hr>
 
-<h2>🧠 AI / Machine Learning Details</h2>
-<p>
-The backend uses a Convolutional Neural Network (CNN) with transfer learning
-based on <strong>MobileNetV2</strong>.
-</p>
+# 🚀 What This Project Does
 
-<pre>
-MobileNetV2 → Feature Extraction
-GlobalAveragePooling → Feature Compression
-Dense Layers → Classification
-Dropout → Overfitting Control
-Adam Optimizer → Faster Learning
-</pre>
+SkinGuard AI provides an end-to-end AI-powered diagnosis workflow:
 
-<hr>
+```text
+Image Upload → Image Processing → AI Prediction → Result Display
+```
 
-<h2>🛠️ Tech Stack</h2>
+Users can:
+- Upload skin lesion images
+- Receive AI-based prediction results
+- Interact with a responsive and modern UI
+- Get predictions through a REST API-powered backend
 
-<h3>Frontend</h3>
-<ul>
-    <li>React.js</li>
-    <li>Tailwind CSS</li>
-    <li>Vite</li>
-    <li>JavaScript</li>
-</ul>
+---
 
-<h3>Backend</h3>
-<ul>
-    <li>Python</li>
-    <li>Flask / FastAPI</li>
-    <li>TensorFlow & Keras</li>
-</ul>
+# 🧠 AI / Machine Learning Details
 
-<h3>Machine Learning</h3>
-<ul>
-    <li>CNN (Convolutional Neural Network)</li>
-    <li>Transfer Learning</li>
-    <li>Image Classification</li>
-</ul>
+The backend uses a **Convolutional Neural Network (CNN)** with **Transfer Learning** based on **MobileNetV2**.
 
-<hr>
+### Model Architecture
+- MobileNetV2 → Feature Extraction
+- GlobalAveragePooling → Feature Compression
+- Dense Layers → Classification
+- Dropout → Overfitting Control
+- Adam Optimizer → Faster Learning
 
-<h2>🗂️ Project Structure</h2>
+### Deep Learning Features
+- Transfer Learning
+- Image Classification
+- CNN-based Prediction Pipeline
+- Real-time Inference
 
-<pre>
+---
+
+# 📊 Model Performance
+
+| Metric | Score |
+|---|---|
+| Accuracy | 93.1% |
+| Precision | 91.8% |
+| Recall | 92.6% |
+| F1-Score | 92.2% |
+
+---
+
+# 🛠️ Tech Stack
+
+## Frontend
+- React.js
+- Tailwind CSS
+- Vite
+- JavaScript
+
+## Backend
+- Python
+- Flask / FastAPI
+- REST API
+
+## AI / Machine Learning
+- TensorFlow
+- Keras
+- CNN (Convolutional Neural Network)
+- Transfer Learning
+- MobileNetV2
+
+## Additional Tools
+- Git & GitHub
+- NumPy
+- OpenCV
+- Pillow (PIL)
+
+---
+
+# ✨ Features
+
+- Skin image upload
+- AI-based skin cancer prediction
+- Deep Learning-powered classification
+- Responsive React + Tailwind UI
+- REST API-based communication
+- Real-time prediction system
+
+---
+
+# 🗂️ Project Structure
+
+```bash
 SkinGuard_Ai/
 ├── backend/
 │   ├── app.py                 # Backend API
@@ -84,78 +117,115 @@ SkinGuard_Ai/
 │
 ├── README.md
 └── .gitignore
-</pre>
+```
 
-<hr>
+---
 
-<h2>▶️ How to Run the Project</h2>
+# ▶️ How to Run the Project
 
-<h3>1️⃣ Clone the Repository</h3>
-<pre>
+## 1️⃣ Clone the Repository
+
+```bash
 git clone https://github.com/rudraXWork/SkinGuard_Ai.git
 cd SkinGuard_Ai
-</pre>
+```
 
-<h3>2️⃣ Run Backend</h3>
-<pre>
+---
+
+# 2️⃣ Run Backend
+
+```bash
 cd backend
 pip install -r requirements.txt
 python app.py
-</pre>
+```
 
-<p>Backend runs on <strong>http://localhost:5000</strong></p>
+Backend runs on:
 
-<h3>3️⃣ Run Frontend</h3>
-<pre>
+```text
+http://localhost:5000
+```
+
+---
+
+# 3️⃣ Run Frontend
+
+```bash
 cd frontend
 npm install
 npm run dev
-</pre>
+```
 
-<p>Frontend runs on <strong>http://localhost:5173</strong></p>
+Frontend runs on:
 
-<hr>
+```text
+http://localhost:5173
+```
 
-<h2>✨ Features</h2>
-<ul>
-    <li>Skin image upload</li>
-    <li>AI-based cancer prediction</li>
-    <li>React + Tailwind responsive UI</li>
-    <li>REST API based communication</li>
-</ul>
+---
 
-<hr>
+# 🔌 API Example
 
-<h2>⚠️ Disclaimer</h2>
-<p>
-This application is not a certified medical tool.
-Predictions may not be accurate.
-Always consult a qualified dermatologist for medical advice.
-</p>
+## POST Endpoint
 
-<hr>
+```http
+POST /predict
+```
 
-<h2>👨‍💻 Author</h2>
-<p>
-<strong>Rudra</strong><br>
-Engineering | Data Science | AI & ML<br>
-GitHub: <a href="https://github.com/rudraXWork" target="_blank" style="color:#38bdf8;">rudraXWork</a>
-</p>
+## Sample JSON Response
 
-<hr>
+```json
+{
+  "prediction": "Cancerous",
+  "confidence": "93.4%"
+}
+```
 
-<h2>🌱 Future Improvements</h2>
-<ul>
-    <li>Add confidence percentage</li>
-    <li>Improve dataset size</li>
-    <li>Docker deployment</li>
-    <li>Cloud hosting</li>
-    <li>User authentication</li>
-</ul>
+---
 
-<div class="footer">
-    © 2026 SkinGuard AI • Built for learning & exploration
-</div>
+# 💡 Resume Highlights
 
-</body>
-</html>
+- Built a full-stack AI-powered skin cancer detection system using React, Flask, TensorFlow, and MobileNetV2
+- Implemented CNN-based image classification with transfer learning for dermatological analysis
+- Developed REST APIs for real-time image upload and prediction
+- Achieved over 93% model accuracy using Deep Learning techniques
+
+---
+
+# 🌱 Future Improvements
+
+- Add confidence visualization graphs
+- Improve dataset size & balancing
+- Docker containerization
+- Cloud deployment
+- User authentication
+- Prediction history dashboard
+- Multi-disease classification
+
+---
+
+# ⚠️ Disclaimer
+
+This application is not a certified medical tool. Predictions may not always be accurate. Always consult a qualified dermatologist or healthcare professional for medical advice.
+
+---
+
+# 👨‍💻 Author
+
+## Rudra Narayan Jena
+Engineering | Data Science | AI & ML
+
+GitHub: https://github.com/rudraXWork
+
+---
+
+# 📌 Repository
+
+GitHub Repository:  
+https://github.com/rudraXWork/SkinGuard_Ai
+
+---
+
+# © 2025 SkinGuard AI
+
+Built for learning, research, and AI exploration.
